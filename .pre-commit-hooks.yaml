@@ -1,5 +1,5 @@
 - id: hate-2020-formatter
   name: Change all occurrences of 2020 to 2021
-  entry: formatter
+  entry: executable
   language: python
   files: \.md$
