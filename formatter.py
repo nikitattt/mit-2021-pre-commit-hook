@@ -23,15 +23,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument('filenames', nargs='*', help='Filenames to fix')
     args = parser.parse_args(argv)
 
-    retv = 0
-
     for filename in args.filenames:
         return_value = fix_2020(filename)
         if return_value != 0:
             print(f'Changing 2020 in {filename}')
-        retv |= return_value
 
-    return retv
+    return 0
 
 if __name__ == '__main__':
     exit(main())
